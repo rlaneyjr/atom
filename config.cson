@@ -1,0 +1,38 @@
+"*":
+  "autocomplete-python":
+    useKite: false
+  "city-lights-ui": {}
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".hgrc"
+        ".buckconfig"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    telemetryConsent: "no"
+    uriHandlerRegistration: "always"
+  editor:
+    fontFamily: "Hack"
+    fontSize: 15
+    showIndentGuide: true
+    showInvisibles: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+    zoomFontWhenCtrlScrolling: true
+  "exception-reporting":
+    userId: "dcbef0c7-e428-4cca-85eb-9fe4e47505f8"
+  kite:
+    editorMetricsEnabled: "yes"
+  nuclide:
+    use: {}
+  "seti-ui":
+    compactView: true
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+  welcome:
+    showOnStartup: false

@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-11829-86943-fn1410.cff20529/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-11829-86943-fn1410.cff20529/package.tgz",
+        "spec": "/private/tmp/d-11829-86943-fn1410.cff20529/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-11829-86943-d6wm1n.ehmc2fbt9"
+    ]
+  ],
+  "_from": "../d-11829-86943-fn1410.cff20529/package.tgz",
+  "_id": "vim-plus-autocomplete-emmet-compatibility@0.1.0",
+  "_inCache": true,
+  "_location": "/vim-plus-autocomplete-emmet-compatibility",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-11829-86943-fn1410.cff20529/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-11829-86943-fn1410.cff20529/package.tgz",
+    "spec": "/private/tmp/d-11829-86943-fn1410.cff20529/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11829-86943-fn1410.cff20529/package.tgz",
+  "_shasum": "c86190dde638a1f7b079d536f774e8075a47192e",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-11829-86943-fn1410.cff20529/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11829-86943-d6wm1n.ehmc2fbt9",
+  "activationCommands": {
+    "atom-workspace": "vim-autocomplete-emmet-compatibility:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/wangsongiam/atom-vim-emmet-autocomplete-compatibility/issues"
+  },
+  "dependencies": {},
+  "description": "A short description of your package",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/wangsongiam/atom-vim-emmet-autocomplete-compatibility#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/vim-autocomplete-emmet-compatibility",
+  "name": "vim-plus-autocomplete-emmet-compatibility",
+  "optionalDependencies": {},
+  "readme": "# vim-autocomplete-emmet-compatibility package\n\n## use tab for emmet without interrupting autocomplete in vim plus mode\n\n![2017-01-01 14 31 52](https://cloud.githubusercontent.com/assets/19645990/21582653/54db985e-d02f-11e6-84cc-8cac2826912c.gif)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangsongiam/atom-vim-emmet-autocomplete-compatibility.git"
+  },
+  "version": "0.1.0"
+}

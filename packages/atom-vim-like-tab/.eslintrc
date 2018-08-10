@@ -1,0 +1,29 @@
+{
+    "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": [
+        "jasmine"
+    ],
+    "env": {
+      "node": true,
+      "jasmine": true,
+      "atomtest": true,
+      "browser": true,
+      "es6": true,
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:jasmine/recommended",
+    ],
+    "rules": {
+      semi: ["error", "never"],
+    },
+    "globals":{
+        "atom": false,
+    }
+}

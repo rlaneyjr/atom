@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-11829-57355-1rzy91n.p2satt9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-11829-57355-1rzy91n.p2satt9/package.tgz",
+        "spec": "/private/tmp/d-11829-57355-1rzy91n.p2satt9/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-11829-57355-1e9q6ni.7l6ai9hpvi"
+    ]
+  ],
+  "_from": "../d-11829-57355-1rzy91n.p2satt9/package.tgz",
+  "_id": "atom-vim-colon-command-on-command-pallete@0.2.0",
+  "_inCache": true,
+  "_location": "/atom-vim-colon-command-on-command-pallete",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-11829-57355-1rzy91n.p2satt9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-11829-57355-1rzy91n.p2satt9/package.tgz",
+    "spec": "/private/tmp/d-11829-57355-1rzy91n.p2satt9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11829-57355-1rzy91n.p2satt9/package.tgz",
+  "_shasum": "3451616a3598e89f2340530dc15677db682562aa",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-11829-57355-1rzy91n.p2satt9/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11829-57355-1e9q6ni.7l6ai9hpvi",
+  "activationCommands": {},
+  "bugs": {
+    "url": "https://github.com/takkjoga/atom-vim-colon-command-on-command-pallete/issues"
+  },
+  "dependencies": {},
+  "description": "Add colon command on Command Pallete to vim-mode",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/takkjoga/atom-vim-colon-command-on-command-pallete#readme",
+  "keywords": [
+    "vim",
+    "command"
+  ],
+  "license": "MIT",
+  "main": "./lib/atom-vim-colon-command-on-command-pallete",
+  "name": "atom-vim-colon-command-on-command-pallete",
+  "optionalDependencies": {},
+  "readme": "# atom-vim-colon-command-on-command-pallete package\n\nAdd colon command on Command Pallete to vim-mode\n\n![screenshot](https://raw.githubusercontent.com/takkjoga/atom-vim-colon-command-on-command-pallete/master/atom-vim-colon-command-on-command-pallete.gif)\n\n# Support (No argument only)\n* w (write)\n* q (quit)\n* wq\n* tabnew\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takkjoga/atom-vim-colon-command-on-command-pallete.git"
+  },
+  "version": "0.2.0"
+}

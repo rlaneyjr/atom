@@ -1,0 +1,75 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118518-2178-1wed4mk.wgj9oirudi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118518-2178-1wed4mk.wgj9oirudi/package.tgz",
+        "spec": "/private/tmp/d-118518-2178-1wed4mk.wgj9oirudi/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118518-2178-jg2hxr.bx7ds4i"
+    ]
+  ],
+  "_from": "../d-118518-2178-1wed4mk.wgj9oirudi/package.tgz",
+  "_id": "autocomplete-ansible@0.1.22",
+  "_inCache": true,
+  "_location": "/autocomplete-ansible",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118518-2178-1wed4mk.wgj9oirudi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118518-2178-1wed4mk.wgj9oirudi/package.tgz",
+    "spec": "/private/tmp/d-118518-2178-1wed4mk.wgj9oirudi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118518-2178-1wed4mk.wgj9oirudi/package.tgz",
+  "_shasum": "66d6a5ddfc3051554a35304239d4ac9ba5e6f4a5",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118518-2178-1wed4mk.wgj9oirudi/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118518-2178-jg2hxr.bx7ds4i",
+  "bugs": {
+    "url": "https://github.com/h-hirokawa/atom-autocomplete-ansible/issues"
+  },
+  "dependencies": {
+    "escape-string-regexp": "^1.0.5",
+    "fuzzaldrin": "^2.1"
+  },
+  "description": "An autocomplete+ provider for Ansible Playbook",
+  "devDependencies": {
+    "babel-eslint": "^6.1.0",
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-react": "^5.1.1"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/h-hirokawa/atom-autocomplete-ansible#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./libs/main",
+  "name": "autocomplete-ansible",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# autocomplete-ansible package [![Build Status](https://travis-ci.org/h-hirokawa/atom-autocomplete-ansible.svg?branch=master)](https://travis-ci.org/h-hirokawa/atom-autocomplete-ansible)\n\nAn [autocomplete+](https://github.com/atom/autocomplete-plus) provider for Ansible Playbook.\n\n## Features\n* Autocompletion of Playbook directives & module names.\n* Snippets for module arguments.\n  * **module_name + `r`**: Complete **required** arguments.\n  * **module_name + `a`**: Complete **all** arguments include optional.\n\n![demo](https://cloud.githubusercontent.com/assets/1086022/16838450/1c3d368a-4a04-11e6-9775-64de7bf19dc2.gif)\n\n## Requirements\n* Ansible >= 2.2 and Python 2.7\nor\n* Ansible >= 2.4 and Python >= 3.5\n\n## ToDo\n* Autocompletion of module arguments when the cursor is in module block.\n* Autocompletion of variables/factors.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-hirokawa/atom-autocomplete-ansible.git"
+  },
+  "version": "0.1.22"
+}

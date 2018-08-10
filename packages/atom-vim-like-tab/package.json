@@ -1,0 +1,114 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118610-66313-9awqjd.om9g9wl8fr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118610-66313-9awqjd.om9g9wl8fr/package.tgz",
+        "spec": "/private/tmp/d-118610-66313-9awqjd.om9g9wl8fr/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118610-66313-1pli6kg.gbnezh0k9"
+    ]
+  ],
+  "_from": "../d-118610-66313-9awqjd.om9g9wl8fr/package.tgz",
+  "_id": "atom-vim-like-tab@1.5.2",
+  "_inCache": true,
+  "_location": "/atom-vim-like-tab",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118610-66313-9awqjd.om9g9wl8fr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118610-66313-9awqjd.om9g9wl8fr/package.tgz",
+    "spec": "/private/tmp/d-118610-66313-9awqjd.om9g9wl8fr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118610-66313-9awqjd.om9g9wl8fr/package.tgz",
+  "_shasum": "93350ce2702ad22e31a6ce9636a8afcaf2d3334b",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118610-66313-9awqjd.om9g9wl8fr/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118610-66313-1pli6kg.gbnezh0k9",
+  "atomTestRunner": "atom-mocha-test-runner",
+  "bugs": {
+    "url": "https://github.com/kesin11/atom-vim-like-tab/issues"
+  },
+  "configSchema": {
+    "enableTopTabPanel": {
+      "type": "boolean",
+      "default": true,
+      "description": "If enable, vim like tab list will shown on top of editor view."
+    },
+    "dontRestoreInactiveTabsPane": {
+      "type": "boolean",
+      "default": false,
+      "description": "At startup, prevents restoring the tabs that inactived at the time of last quit. ## NOTE: This function using atom private API. Maybe not working newer atom version ##"
+    }
+  },
+  "dependencies": {
+    "atom-select-list": "0.7.1",
+    "etch": "^0.14.0",
+    "underscore-plus": "^1.6.6"
+  },
+  "description": "Add Vim like tab features in Atom",
+  "devDependencies": {
+    "atom-mocha-test-runner": "1.2.0",
+    "chai": "4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "2.13.0",
+    "eslint-plugin-jasmine": "^2.9.3",
+    "npm-watch": "^0.3.0"
+  },
+  "engines": {
+    "atom": ">=1.28.0 <2.0.0"
+  },
+  "homepage": "https://github.com/kesin11/atom-vim-like-tab#readme",
+  "keywords": [
+    "Vim",
+    "Tab",
+    "Pane"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "atom-vim-like-tab",
+  "optionalDependencies": {},
+  "readme": "# atom-vim-like-tab package [![Build Status](https://travis-ci.org/Kesin11/atom-vim-like-tab.svg?branch=master)](https://travis-ci.org/Kesin11/atom-vim-like-tab)\n\nAdd Vim like tab features in Atom\n\nCreate virtual window that can have multiple pane.\nIt emulate vim tab features.\n\n![atom-vim-like-tab.gif](https://raw.githubusercontent.com/Kesin11/atom-vim-like-tab/images/images/atom-vim-like-tab1_2.gif)\n![tab_list_view.png](https://raw.githubusercontent.com/Kesin11/atom-vim-like-tab/images/images/tab_list_view.png)\n\n# Commands\n- `atom-vim-like-tab:new`: crate new tab\n- `atom-vim-like-tab:close`: close current tab\n- `atom-vim-like-tab:previous`: show previous tab\n- `atom-vim-like-tab:next`: show next tab\n- `atom-vim-like-tab:list`: open tab select panel\n\n# Keymap\n\nNo default keymaps.\nHere is my example\n\n```\n'.editor.vim-mode-plus:not(.insert-mode)':\n  't c': 'atom-vim-like-tab:new' # mean 'tab create'\n  ': t a b c': 'atom-vim-like-tab:close'\n  't p': 'atom-vim-like-tab:previous'\n  't n': 'atom-vim-like-tab:next'\n  'space t': 'atom-vim-like-tab:list'\n```\n\nIf you're using [ex-mode](https://atom.io/packages/ex-mode) here are a few additional shortcuts to be more like Real Vim (plus, it should be easy to see how to add your own!)\n```\n// keymap.cson\n'.editor.vim-mode-plus:not(.insert-mode)':\n  'g t': 'atom-vim-like-tab:next'\n  'g T': 'atom-vim-like-tab:previous'\n```\n```\n// init.coffee\natom.packages.onDidActivatePackage (pack) ->\n  if pack.name == 'ex-mode'\n    Ex = pack.mainModule.provideEx()\n    Ex.registerCommand 'tabs', ->\n      atomWorkspace = atom.views.getView(atom.workspace)\n      setTimeout ->\n        atom.commands.dispatch(atomWorkspace, 'atom-vim-like-tab:list')\n      , 0\n    Ex.registerCommand 'tab', ->\n      atomWorkspace = atom.views.getView(atom.workspace)\n      setTimeout ->\n        atom.commands.dispatch(atomWorkspace, 'atom-vim-like-tab:new')\n      , 0\n    Ex.registerCommand 'tabn', ->\n      atomWorkspace = atom.views.getView(atom.workspace)\n      setTimeout ->\n        atom.commands.dispatch(atomWorkspace, 'atom-vim-like-tab:next')\n      , 0\n    Ex.registerCommand 'tabp', ->\n      atomWorkspace = atom.views.getView(atom.workspace)\n      setTimeout ->\n        atom.commands.dispatch(atomWorkspace, 'atom-vim-like-tab:previous')\n      , 0\n    Ex.registerCommand 'tabclose', ->\n      atomWorkspace = atom.views.getView(atom.workspace)\n      setTimeout ->\n        atom.commands.dispatch(atomWorkspace, 'atom-vim-like-tab:close')\n      , 0\n```\n\n# Future work\n- [x] Add packages menu\n- [x] Add list view feature for show and select tab\n- [x] Always show how many tab and which is current tab. inspire by vim\n\n# License\nMIT\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kesin11/atom-vim-like-tab.git"
+  },
+  "scripts": {
+    "lint": "eslint lib spec",
+    "test": "atom --test ./spec/*",
+    "test:beta": "atom --test ./spec/*",
+    "watch": "npm-watch test",
+    "watch:beta": "npm-watch test:beta"
+  },
+  "version": "1.5.2",
+  "watch": {
+    "test": {
+      "patterns": [
+        "lib",
+        "spec"
+      ],
+      "extensions": "js",
+      "quiet": true
+    },
+    "test:beta": {
+      "patterns": [
+        "lib",
+        "spec"
+      ],
+      "extensions": "js",
+      "quiet": true
+    }
+  }
+}

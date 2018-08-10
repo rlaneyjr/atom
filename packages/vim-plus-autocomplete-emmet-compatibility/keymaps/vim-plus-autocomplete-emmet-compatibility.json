@@ -1,0 +1,11 @@
+{
+  "atom-text-editor.autocomplete-active:not([mini])": {
+    "tab": "autocomplete-plus:confirm"
+  },
+  ".pane .editor:not(.mini)": {
+    "tab": "snippets:expand"
+  },
+  "atom-text-editor.vim-mode-plus.insert-mode": {
+    "tab": "emmet:expand-abbreviation-with-tab"
+  }
+}
