@@ -1,8 +1,10 @@
 "*":
   "autocomplete-python":
     useKite: false
-  "city-lights-ui": {}
+  "city-lights-ui":
+    fontSize: 12
   core:
+    audioBeep: false
     customFileTypes:
       "source.ini": [
         ".hgrc"
@@ -14,14 +16,21 @@
       "source.python": [
         "BUCK"
       ]
+    projectHome: "/Users/rlaney/Projects"
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
+    themes: [
+      "city-lights-ui"
+      "one-dark-syntax"
+    ]
+    titleBar: "custom"
     uriHandlerRegistration: "always"
+    useTreeSitterParsers: true
   editor:
     fontFamily: "Hack"
-    fontSize: 15
+    invisibles: {}
     showIndentGuide: true
     showInvisibles: true
-    softWrapAtPreferredLineLength: true
     tabLength: 4
     zoomFontWhenCtrlScrolling: true
   "exception-reporting":
@@ -30,8 +39,12 @@
     editorMetricsEnabled: "yes"
   nuclide:
     use: {}
+  "one-dark-ui":
+    stickyHeaders: true
   "seti-ui":
     compactView: true
+    fileIcons: false
+    themeColor: "Orange"
   "vim-mode":
     useClipboardAsDefaultRegister: true
   welcome:
